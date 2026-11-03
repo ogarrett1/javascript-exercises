@@ -1,8 +1,9 @@
 const reverseString = function(str) {
     let reverse = "";
-
-    for (let i = 0; i < str.length; i++) {
-        reverse += str.pop();
+    const arr = str.split('')
+    
+    for (let i = 0; i < arr.length; i++) {
+        reverse += arr.pop();
     }
 
     return reverse;
