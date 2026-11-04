@@ -1,8 +1,10 @@
 const removeFromArray = function(arr, arg) {
     // splice where at 
 
-    return arr.filter(arg => !arr.includes(arg));
-    
+    var i = arr.indexOf(arg);
+    arr.slice(i);
+
+    return arr;    
 };
 
 // Do not edit below this line
