@@ -4,10 +4,10 @@ const removeFromArray = function(arr, arg) {
 
     console.log(arr);
 
-    for (const arg of args) {
         var i = arr.indexOf(arg);
         arr.splice(i, 1);
-    }
+    
+
     console.log(arg);
     console.log(i);
     console.log(arr);
