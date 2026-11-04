@@ -1,8 +1,12 @@
 const removeFromArray = function(arr, arg) {
     // splice where at 
 
+    console.log(arr);
+
     var i = arr.indexOf(arg);
-    arr.slice(i);
+    arr.splice(i, i);
+    console.log(arg);
+    console.log(i);
 
     return arr;    
 };
