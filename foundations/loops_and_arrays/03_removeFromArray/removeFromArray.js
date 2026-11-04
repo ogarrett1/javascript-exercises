@@ -1,17 +1,6 @@
-const removeFromArray = function(arr, arg) {
+const removeFromArray = function(arr, args) {
     // splice where at 
-
-
-    console.log(arr);
-
-        var i = arr.indexOf(arg);
-        arr.splice(i, 1);
-    
-
-    console.log(arg);
-    console.log(i);
-    console.log(arr);
-    return arr;    
+    return arr.filter(arg => !args.includes(arg));
 };
 
 // Do not edit below this line
