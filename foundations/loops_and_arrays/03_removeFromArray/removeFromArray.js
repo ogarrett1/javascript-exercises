@@ -1,4 +1,4 @@
-const removeFromArray = function(arr, args) {
+const removeFromArray = function(arr, ...args) {
     // splice where at 
     return arr.filter(arg => !args.includes(arg));
 };
