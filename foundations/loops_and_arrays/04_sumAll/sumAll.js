@@ -3,9 +3,12 @@ const sumAll = function(num1, num2) {
         return 'ERROR';
     }
 
-    //var diff = Math.abs(num1-num2);
+    /*
+    from solution:
+    https://www.freecodecamp.org/news/array-destructuring-in-es6-30e398f21d10/
+    if (min > max) [min, max] = [max, min];
+    */
 
-    //i feel like theres an easier way to do this
     if (num1 > num2) {
         var lg = num1;
         var sm = num2;
@@ -15,9 +18,6 @@ const sumAll = function(num1, num2) {
         var sm = num1;
     }
 
-    console.log(lg);
-    console.log(sm);
-    
     var sum = 0;
     for (var i = sm; i <= lg; i++) {
         sum += i;
